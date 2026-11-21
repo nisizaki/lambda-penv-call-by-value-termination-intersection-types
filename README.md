@@ -130,3 +130,7 @@ docs/outline.pdf           theory document: all theories with proofs omitted
 Shin-ya Nishizaki and Shogo Murasaki.
 *Call-by-Value Termination of λpenv, a Calculus Mixing Functions and Environments, and
 its Characterization by Intersection Types, Formalized in Isabelle/HOL.*
+
+## License
+
+MIT License (see [LICENSE](LICENSE)).
