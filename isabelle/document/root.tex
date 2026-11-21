@@ -1,0 +1,34 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amssymb}
+\usepackage{pdfsetup}
+\urlstyle{rm}
+\isabellestyle{it}
+
+\begin{document}
+
+\title{Call-by-Value Termination of $\lambda_{penv}$\\and its Characterization by Intersection Types}
+\author{Shin-ya Nishizaki \and Shogo Murasaki}
+\maketitle
+
+\begin{abstract}
+$\lambda_{penv}$ extends the calculus $\lambda_{env}$ of first-class environments with
+quoted names, so that functions and environments can be used interchangeably.  We define
+a call-by-value reduction for $\lambda_{penv}$: full $\sigma$ together with a deterministic,
+left-to-right $\beta_v$ that fires only on fireball arguments, quoted names being values
+and environments staying lazy.  We prove that a term is typable with an essential type,
+in an intersection type system with $\omega$, environment types and name types that
+requires arguments to have essential types, if and only if it reaches a clash-free normal
+form, if and only if all its reductions terminate in clash-free normal forms.  On sorted
+$\lambda_{env}$ terms the reduction coincides with call-by-value $\lambda_{env}$, and on pure
+$\lambda$-terms typability coincides with normalization in open call-by-value.
+\end{abstract}
+
+\tableofcontents
+
+\parindent 0pt\parskip 0.5ex
+
+\input{session}
+
+\end{document}
